@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Facility | Night Usage Predictor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="glow" style="top: -100px; left: -100px;"></div>
+    <div class="glow" style="bottom: -100px; right: -100px; background: var(--accent-secondary);"></div>
+
+    <div class="container">
+        <header>
+            <div>
+                <h1>SportsFacility AI</h1>
+                <p style="color: var(--text-secondary); margin-top: 0.5rem;">Intelligent Night Electricity Usage
+                    Prediction</p>
+            </div>
+            <div id="date-display" style="text-align: right; color: var(--text-secondary);">
+                March 5, 2026
+            </div>
+        </header>
+
+        <div class="controls">
+            <button class="filter-btn active" data-type="All">All Days</button>
+            <button class="filter-btn" data-type="Weekday">Weekdays</button>
+            <button class="filter-btn" data-type="Weekend">Weekends</button>
+            <button class="filter-btn" data-type="Event">Event Days</button>
+        </div>
+
+        <div class="grid">
+            <div class="card" style="grid-column: span 2;">
+                <div class="card-title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                    </svg>
+                    Hourly Electricity Usage (Prediction vs Actual)
+                </div>
+                <div class="chart-container">
+                    <canvas id="usageChart"></canvas>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Key Insights</div>
+                <div style="margin-bottom: 1.5rem;">
+                    <div class="stat-label">Projected Night Peak</div>
+                    <div class="stat-value" id="peak-value">42.5 kWh</div>
+                </div>
+                <div style="margin-bottom: 1.5rem;">
+                    <div class="stat-label">Model Accuracy</div>
+                    <div class="stat-value" style="color: #4ade80;">94.2%</div>
+                </div>
+                <div style="margin-bottom: 1.5rem;">
+                    <div class="stat-label">Next Event</div>
+                    <p style="font-weight: 600; margin-top: 0.5rem;">March 7 - Inter-State Finals</p>
+                </div>
+                <div>
+                    <div class="stat-label">Our Technology</div>
+                    <ul
+                        style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.5rem; list-style: none; padding: 0;">
+                        <li>• LSTM RNN Time-series Engine</li>
+                        <li>• FastAPI Asynchronous Backend</li>
+                        <li>• Vanilla JS Responsive UI</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div
+                style="border-top: 1px solid var(--glass-border); padding-top: 2rem; margin-top: 3rem; display: flex; justify-content: space-between; align-items: center; color: var(--text-secondary); font-size: 0.9rem;">
+                <div>&copy; 2026 SportsFacility AI. Built for Hack-o-week.</div>
+                <div style="display: flex; gap: 1.5rem;">
+                    <span>Model: RNN-LSTM</span>
+                    <span>Backend: FastAPI</span>
+                    <span>Frontend: Vanilla JS</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

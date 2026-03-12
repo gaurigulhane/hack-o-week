@@ -1,0 +1,13 @@
+node_modules
+dist
+.DS_Store
+*.local
+.env
+.npm
+/tmp
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.lock-wscript
+package-lock.json
+build

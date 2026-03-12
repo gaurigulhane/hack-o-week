@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria Load Predictor</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-blob"></div>
+    <div class="background-blob blob-2"></div>
+    
+    <div class="container">
+        <header>
+            <h1>Cafeteria Load <span class="accent">Predictor</span></h1>
+            <p>Real-time lunch surge forecasting using Linear Regression</p>
+        </header>
+
+        <div class="dashboard-grid">
+            <div class="card glass status-card">
+                <h3>Current Status</h3>
+                <div class="stat-group">
+                    <div class="stat">
+                        <label>Actual Load</label>
+                        <span id="actual-load">--</span>
+                    </div>
+                    <div class="stat">
+                        <label>Predicted</label>
+                        <span id="predicted-load" class="accent">--</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card glass weather-card">
+                <h3>Environment</h3>
+                <div class="stat-group">
+                    <div class="stat">
+                        <label>Temperature</label>
+                        <span id="temp">--</span>
+                    </div>
+                    <div class="stat">
+                        <label>Humidity</label>
+                        <span id="humidity">--</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card glass chart-card">
+            <div class="chart-header">
+                <h3>Live Occupancy Trend</h3>
+                <div class="legend">
+                    <span class="dot actual"></span> Actual
+                    <span class="dot predicted"></span> Predicted
+                </div>
+            </div>
+            <div class="chart-container">
+                <canvas id="loadChart"></canvas>
+            </div>
+        </div>
+
+        <div class="card glass info-card">
+            <h3>Insights</h3>
+            <p id="insight-text">Awaiting real-time data connection...</p>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

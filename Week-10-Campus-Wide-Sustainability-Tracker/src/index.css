@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700&display=swap');
+
+:root {
+  --primary: #10b981;
+  --primary-hover: #059669;
+  --bg-dark: #020617;
+  --card-bg: rgba(15, 23, 42, 0.6);
+  --text-main: #f8fafc;
+  --text-muted: #64748b;
+  --accent-blue: #3b82f6;
+  --accent-purple: #8b5cf6;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  min-height: 100vh;
+  background-image: 
+    radial-gradient(circle at 0% 0%, rgba(16, 185, 129, 0.08) 0, transparent 40%),
+    radial-gradient(circle at 100% 100%, rgba(59, 130, 246, 0.08) 0, transparent 40%);
+}
+
+h1, h2, h3 { font-family: 'Outfit', sans-serif; }
+
+.container { max-width: 1400px; margin: 0 auto; padding: 2rem; }
+
+.glass {
+  background: var(--card-bg);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  transition: border-color 0.3s ease;
+}
+
+.glass:hover {
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .main-grid { grid-template-columns: 1fr; }
+}
+
+.kpi-card {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.kpi-card .value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.kpi-card .label {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.nav-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.nav-tab {
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.05);
+  transition: all 0.2s;
+  border: 1px solid transparent;
+}
+
+.nav-tab.active {
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.nav-tab:hover:not(.active) {
+  background: rgba(255, 255, 255, 0.1);
+}
