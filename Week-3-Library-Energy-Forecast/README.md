@@ -22,7 +22,7 @@ This project aggregates historical library energy usage with academic calendars 
 
 1. **Clone the repository**:
    ```bash
-   git clone git@github.com:DevDhapodkar/Library-Energy-Forecast-During-Exams.git
+   git clone git@github.com:gaurigulhane/Library-Energy-Forecast-During-Exams.git
    cd Library-Energy-Forecast-During-Exams
    ```
 

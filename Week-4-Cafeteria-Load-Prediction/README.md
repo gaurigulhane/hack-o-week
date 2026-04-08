@@ -39,7 +39,7 @@ This project aims to optimize cafeteria management by predicting peak occupancy 
 
 1. **Clone the repository**:
    ```bash
-   git clone git@github.com:DevDhapodkar/Cafeteria-Load-Prediction-Tasks.git
+   git clone git@github.com:gaurigulhane/Cafeteria-Load-Prediction-Tasks.git
    cd Cafeteria-Load-Prediction-Tasks
    ```
 

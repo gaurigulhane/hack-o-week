@@ -37,7 +37,7 @@ An AI-powered system designed to optimize cooling requirements in laboratory env
 
 1. **Clone the Repository**:
    ```bash
-   git clone git@github.com:DevDhapodkar/HVAC-Optimization-in-Labs.git
+   git clone git@github.com:gaurigulhane/HVAC-Optimization-in-Labs.git
    cd HVAC-Optimization-in-Labs
    ```
 

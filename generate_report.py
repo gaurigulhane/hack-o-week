@@ -6,67 +6,67 @@ projects = [
     {
         "title": "Week 1: Peak Hour Electricity Spikes",
         "image": "Week-1-Peak-Hour-Electricity-Spikes/screenshots/skeuo_main.png",
-        "repo": "https://github.com/DevDhapodkar/Peak-Hour-Electricity-Spikes-Prediction-Dashboard",
+        "repo": "https://github.com/gaurigulhane/Peak-Hour-Electricity-Spikes-Prediction-Dashboard",
         "desc": "Collect hourly meter data from dorms; apply moving average smoothing and linear regression to predict evening peaks based on past week. Visualize trends on a live Plotly dashboard."
     },
     {
         "title": "Week 2: Classroom Usage Forecasting",
         "image": "Week-2-Classroom-Usage-Forecasting/assets/dashboard.png",
-        "repo": "https://github.com/DevDhapodkar/Classroom-Usage-Forecasting-Walkthrough",
+        "repo": "https://github.com/gaurigulhane/Classroom-Usage-Forecasting-Walkthrough",
         "desc": "Use sensor data (occupancy via Wi-Fi logs) to train a simple ARIMA model for next-hour room electricity draw; dashboard shows confidence intervals."
     },
     {
         "title": "Week 3: Library Energy During Exams",
         "image": "Week-3-Library-Energy-Forecast/screenshots/dashboard_finals.png",
-        "repo": "https://github.com/DevDhapodkar/Library-Energy-Forecast-During-Exams",
+        "repo": "https://github.com/gaurigulhane/Library-Energy-Forecast-During-Exams",
         "desc": "Aggregate historical usage with event calendars; implement exponential smoothing for semester-end forecasts, displayed as a gauge on Streamlit dashboard."
     },
     {
         "title": "Week 4: Cafeteria Load Prediction",
         "image": "Week-4-Cafeteria-Load-Prediction/assets/screenshot.png",
-        "repo": "https://github.com/DevDhapodkar/Cafeteria-Load-Prediction-Tasks",
+        "repo": "https://github.com/gaurigulhane/Cafeteria-Load-Prediction-Tasks",
         "desc": "Predict lunch-hour surges using temperature/weather data and linear regression; real-time line chart updates via WebSocket integration."
     },
     {
         "title": "Week 5: HVAC Optimization in Labs",
         "image": "Week-5-HVAC-Optimization/assets/heatmap_view.png",
-        "repo": "https://github.com/DevDhapodkar/HVAC-Optimization-in-Labs",
+        "repo": "https://github.com/gaurigulhane/HVAC-Optimization-in-Labs",
         "desc": "Train a basic decision tree on occupancy/temperature data to forecast cooling needs; dashboard with heatmaps for zone-wise predictions."
     },
     {
         "title": "Week 6: Sports Facility Night Usage",
         "image": "Week-6-Sports-Facility-Usage/assets/dashboard_all_days_1772692155394.png",
-        "repo": "https://github.com/DevDhapodkar/Sports-Facility-Night-Usage",
+        "repo": "https://github.com/gaurigulhane/Sports-Facility-Night-Usage",
         "desc": "Use RNN (simple LSTM) on hourly patterns to predict post-event electricity; interactive dashboard filters by day type."
     },
     {
         "title": "Week 7: Admin Building Weekend Dip",
         "image": "Week-7-Admin-Building-Analysis/assets/dashboard.png",
-        "repo": "https://github.com/DevDhapodkar/Admin-Building-Weekend-Dip",
+        "repo": "https://github.com/gaurigulhane/Admin-Building-Weekend-Dip",
         "desc": "Apply k-means clustering on usage profiles then regress clusters for forecasts; pie charts show savings potential on dashboard."
     },
     {
         "title": "Week 8: Parking Lot Lighting Forecast",
         "image": "Week-8-Parking-Lot-Lighting-Forecast/screenshot.png",
-        "repo": "https://github.com/DevDhapodkar/Parking-Lot-Lighting-Forecast",
+        "repo": "https://github.com/gaurigulhane/Parking-Lot-Lighting-Forecast",
         "desc": "Uses sensor-based vehicle count data with polynomial regression for light usage. Real-time bar chart with anomaly alerts."
     },
     {
         "title": "Week 9: Hostel Laundry Peak Prediction",
         "image": "Week-9-Hostel-Laundry-Peak-Prediction/screenshot.png",
-        "repo": "https://github.com/DevDhapodkar/Hostel-Laundry-Peak-Prediction",
+        "repo": "https://github.com/gaurigulhane/Hostel-Laundry-Peak-Prediction",
         "desc": "Time-series data with naive Bayes for usage categories; forecasting with Prophet. Dashboard with timeline slider for what-if scenarios."
     },
     {
         "title": "Week 10: Campus-Wide Sustainability Tracker",
         "image": "Week-10-Campus-Wide-Sustainability-Tracker/screenshot.png",
-        "repo": "https://github.com/DevDhapodkar/Campus-Wide-Sustainability-Tracker",
+        "repo": "https://github.com/gaurigulhane/Campus-Wide-Sustainability-Tracker",
         "desc": "Ensemble basic models (regression + smoothing) on aggregated data. Comprehensive dashboard with KPIs like carbon savings."
     },
     {
         "title": "Week 11: User Registration Portal",
         "image": "Week-11-User-Registration-Portal/screenshot.png",
-        "repo": "https://github.com/DevDhapodkar/User-Registration-Portal",
+        "repo": "https://github.com/gaurigulhane/User-Registration-Portal",
         "desc": "Secure wearable data management with JWT authentication and AES-256 encryption. React interface for synchronization and profile decryption."
     },
 ]

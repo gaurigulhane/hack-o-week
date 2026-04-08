@@ -22,7 +22,7 @@ A smart energy forecasting system that uses **Wi-Fi occupancy logs** to predict 
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/DevDhapodkar/Classroom-Usage-Forecasting-Walkthrough.git
+git clone https://github.com/gaurigulhane/Classroom-Usage-Forecasting-Walkthrough.git
 cd Classroom-Usage-Forecasting-Walkthrough
 ```
 
